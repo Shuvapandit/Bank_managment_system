@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Somobay banking system</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+
+
+</head>
+<body>
+    <h1 class="text-center text-5xl  font-mono	mt-5">Let's get some <span class="text-green-400 font-bold"> Money</span>!!<h1>
+        <main class="w-3/4 mx-auto ">
+            <!--Balance and transction-->
+            <section class="mt-12 text-white">
+                <div class="grid grid-cols-3 gap-4  ">
+                    <div class="bg-fuchsia-800 p-16 rounded">
+                        <h3 class="text-3xl">Deposit
+                        </h3>
+                        <h4 class="text-2xl">$00
+                        </h4>
+
+                    </div>
+                    <div class="bg-teal-600	 p-16 rounded">
+                        <h3 class="text-3xl">withdraw
+                        </h3>
+                        <h4 class="text-2xl">$00
+                        </h4>
+
+                    </div>
+                    <div class="bg-green-600	 p-16 rounded">
+                        <h3 class="text-3xl">Balance
+                        </h3>
+                        <h4 class="text-2xl">$1200
+                        </h4>
+
+                    </div>
+
+                </div>
+            </section>
+            <!--Deposit and width draw-->
+            <section class="mt-8  text-white	">
+                <div class="grid grid-cols-2   gap-4	">
+                    <div class="p-8 bg-lime-600	 rounded	 ">
+                      
+ <h3 class="text-2xl "> Please deposit</h3>
+
+ <div >
+    <input id="deposit_amount" class="border-2 border-gray-400	 rounded block w-3/4 mb-4 px-4"type="text" placeholder="$amount do you deposit :"> 
+  
+    <button id="login-submit" class="bg-teal-400	rounded-md px-4 py-2 font-medium text-white	">Deposit</button>
+</div>
+                    </div>
+
+                    <div class="p-8 bg-amber-500	 rounded	 ">
+ <h3 class="text-2xl "> Please widthdraw</h3>
+ <div >
+    <input id="widthdraw_amount" class="border-2 border-gray-600	 rounded block w-3/4 mb-4 px-4"type="text" placeholder="$amount want you widthdraw:"> 
+  
+    <button id="login-submit" class="bg-teal-400	rounded-md px-4 py-2 font-medium text-white	">widthdraw</button>
+</div>
+                    </div>
+
+                  
+                </div>
+            </section>
+
+        </main>
+      
+</body>
+</html>

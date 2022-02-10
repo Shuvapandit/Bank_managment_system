@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank managment system</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-5xl  font-mono	mt-5">Welcome to our <span class="text-green-400 font-bold"> রূপকথা সমবায় সমিতি</span>!!<h1>
+    </header>
+    <main>
+        <section class="bg-violet-700 w-3/4	 mx-auto mt-8 p-8	">
+            <h3 class="text-2xl mb-4">Please Login</h3>
+           <div>
+                <input id="user_email" class="border-2 border-gray-400	 rounded block w-3/4 mb-4 px-4"type="text" placeholder="Enter your user name:"> 
+                <input id="user-password"class="border-2 border-gray-400	 rounded block w-3/4 mb-4 px-4" type="password" placeholder="Enter your password" id="">
+                <button id="login-submit" class="bg-teal-400	rounded-md px-4 py-2 font-medium text-white	">Submit</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('login-submit').addEventListener('click',function(){
+     const emailfield=document.getElementById('user_email');
+     const userEmail=emailfield.value;
+     console.log(userEmail)
+     //get user password
+     const passwordFiled=document.getElementById('user-password');
+     const userpass=passwordFiled.value;
+    //lame example
+    if( userEmail=='chakrabortyshuva216@gmail.com' && userpass=='lkmf'){
+        
+    }
+    document.getElementById("login-submit").onclick = function () {
+        location.href = "banking.html";
+    };
+
+        })
+     
+        </script>
+</body>
+</html>
