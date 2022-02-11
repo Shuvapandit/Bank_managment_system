@@ -19,14 +19,14 @@
                     <div class="bg-fuchsia-800 p-16 rounded">
                         <h3 class="text-3xl">Deposit
                         </h3>
-                        <h4 class="text-2xl">$00
+                        <h4 class="text-2xl">$ <span id="dpottl">00</span>
                         </h4>
 
                     </div>
                     <div class="bg-teal-600	 p-16 rounded">
                         <h3 class="text-3xl">withdraw
                         </h3>
-                        <h4 class="text-2xl">$00
+                        <h4 class="text-2xl">$ <span  id="widthdrawtotal">00</span>
                         </h4>
 
                     </div>
@@ -40,26 +40,29 @@
 
                 </div>
             </section>
+
             <!--Deposit and width draw-->
-            <section class="mt-8  text-white	">
-                <div class="grid grid-cols-2   gap-4	">
+            <section class="mt-8  	">
+                <div class="grid grid-cols-2  gap-4	">
                     <div class="p-8 bg-lime-600	 rounded	 ">
                       
  <h3 class="text-2xl "> Please deposit</h3>
 
  <div >
-    <input id="deposit_amount" class="border-2 border-gray-400	 rounded block w-3/4 mb-4 px-4"type="text" placeholder="$amount do you deposit :"> 
-  
-    <button id="login-submit" class="bg-teal-400	rounded-md px-4 py-2 font-medium text-white	">Deposit</button>
+    <input id="depo_amount" class="border-2 border-gray-600	 rounded block w-3/4 mb-4 px-4"type="text" placeholder="$amount want you deposit:"> 
+    <button id="deposit-btn" class="bg-teal-400	rounded-md px-4 py-2 font-medium text-white	">Deposit</button>
 </div>
                     </div>
+                    <!--widthdraw-->
 
-                    <div class="p-8 bg-amber-500	 rounded	 ">
- <h3 class="text-2xl "> Please widthdraw</h3>
- <div >
-    <input id="widthdraw_amount" class="border-2 border-gray-600	 rounded block w-3/4 mb-4 px-4"type="text" placeholder="$amount want you widthdraw:"> 
-  
-    <button id="login-submit" class="bg-teal-400	rounded-md px-4 py-2 font-medium text-white	">widthdraw</button>
+                   
+    <div class="p-8 bg-amber-500	 rounded	 ">
+        <h3 class="text-2xl "> Please widthdraw</h3>
+        <div >
+           <input id="widthdraw_amount" class="border-2 border-gray-600	 rounded block w-3/4 mb-4 px-4"type="text" placeholder="$amount want you widthdraw:"> 
+         
+           <button id="widthdraw-btn" class="bg-teal-400	rounded-md px-4 py-2 font-medium text-white	">widthdraw</button>
+       </div>
 </div>
                     </div>
 
@@ -68,6 +71,6 @@
             </section>
 
         </main>
-      
+        <script src="banking.js"></script>
 </body>
 </html>
